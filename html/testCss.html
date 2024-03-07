@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 18px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://result.school/logo-result.school.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>07. Result</title>
+  </head>
+  <body>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 0 10px black;
+      "
+    ></div>
+
+    <h1>Цвета</h1>
+    <div style="background: #ff0000; width: 40px; height: 40px"></div>
+    <div style="background: rgb(255, 0, 0); width: 40px; height: 40px"></div>
+    <div style="background: black; width: 80px; height: 80px">
+      <div
+        style="background: rgba(255, 0, 0, 0.5); width: 40px; height: 40px"
+      ></div>
+    </div>
+
+    <h1>ГРАНИЦЫ и не только</h1>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+      "
+    ></div>
+    <h3>подробный способ записи</h3>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+      "
+    ></div>
+    <h3>перезапись стиля</h3>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        border-color: purple;
+      "
+    ></div>
+    <h3>порядок стилей</h3>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border-color: purple;
+        border: 1px solid black;
+      "
+    ></div>
+    <h3>box-sizing, width: 40px, height: 40px</h3>
+    <h4>box-sizing: content-box</h4>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 10px solid black;
+        box-sizing: content-box;
+      "
+    ></div>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 50px solid black;
+        box-sizing: content-box;
+      "
+    ></div>
+    <h4>box-sizing: border-box</h4>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 10px solid black;
+        box-sizing: border-box;
+      "
+    ></div>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        box-sizing: border-box;
+      "
+    ></div>
+    <h3>"Частичные" версии стилей</h3>
+    <div
+      style="
+        background: red;
+        width: 40px;
+        height: 40px;
+        border-left: 5px solid black;
+      "
+    ></div>
+
+    <h1>ЕДИНИЦЫ ИЗМЕРЕНИЯ</h1>
+    <h3>px</h3>
+    <div style="background: red; width: 40px; height: 40px"></div>
+    <h3>%</h3>
+    <div style="background: black; width: 80px; height: 80px">
+      <div style="background: red; width: 50%; height: 50%"></div>
+    </div>
+    <h4>высота страницы (тег body) 0px</h4>
+    <div style="background: red; width: 50%; height: 50%"></div>
+    <div style="background: red; width: 50%; height: 50px"></div>
+    <h3>viewport: vw (viewport width) и vh (viewport height)</h3>
+    <div style="background: black; width: 80px; height: 80px">
+      <!-- для наглядности лучше выставить 50vw и 50vh -->
+      <div style="background: red; width: 10vw; height: 10vh"></div>
+    </div>
+    <h3>em и rem</h3>
+    <div style="font-size: 12px; display: flex; gap: 15px">
+      <div style="height: 18px; background: rgb(250, 164, 164)">
+        height: 18px
+      </div>
+      <div style="height: 1.5em; background: rgb(250, 164, 164)">
+        height: 1.5em
+      </div>
+      <div style="height: 1.5rem; background: rgb(250, 164, 164)">
+        height: 1.5rem
+      </div>
+    </div>
+
+    <h1>ПОЗИЦИОНИРОВАНИЕ</h1>
+    <h3>padding</h3>
+    <div
+      style="
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+      "
+    >
+      <div style="background: red; width: 40px; height: 40px"></div>
+      <div style="background: red; width: 40px; height: 40px"></div>
+    </div>
+    <h3>padding-top</h3>
+    <div
+      style="
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        padding-top: 10px;
+      "
+    >
+      <div style="background: red; width: 40px; height: 40px"></div>
+      <div style="background: red; width: 40px; height: 40px"></div>
+    </div>
+    <h3>margin</h3>
+    <div style="width: 150px; height: 150px; border: 1px solid black">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: 10px;
+          border: 1px solid black;
+        "
+      ></div>
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+
+    <h3>margin: 10px 20px 30px 40px</h3>
+    <div style="border: 1px solid black; width: max-content">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: 10px 20px 30px 40px;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+
+    <h3>margin: 10px 20px</h3>
+    <div style="border: 1px solid black; width: max-content">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: 10px 20px;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+
+    <h3>margin: 10px 20px 30px</h3>
+    <div style="border: 1px solid black; width: max-content">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: 10px 20px 30px;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+    <h3>margin: 10px auto 30px</h3>
+    <div style="border: 1px solid black; width: 100%">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: 10px auto 30px;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+    <h3>margin: auto auto</h3>
+    <div style="border: 1px solid black; width: 100%; height: 200px">
+      <div
+        style="
+          background: red;
+          width: 40px;
+          height: 40px;
+          margin: auto auto;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+
+    <h1>GRID</h1>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px;
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+    </div>
+    <h3>repeat</h3>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(4, 40px);
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+    </div>
+    <h3>fr</h3>
+    <h4>grid-template-columns: 1fr 2fr 3fr 4fr;</h4>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr 4fr;
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+    </div>
+    <h4>grid-template-columns: repeat(4, 1fr);</h4>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+    </div>
+    <h4>grid-template-columns: 2fr 2fr 2fr 2fr;</h4>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+      <div style="background: red; width: 100%; height: 20px"></div>
+    </div>
+
+    <h3>grid-template-rows</h3>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20px 20px;
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+    </div>
+
+    <h3>grid-auto-rows</h3>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 20px;
+        gap: 10px 20px;
+      "
+    >
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+    </div>
+
+    <h3>grid-template-areas</h3>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 20px;
+        grid-template-areas:
+          'doubleRow doubleRow .'
+          'doubleColumn . .'
+          'doubleColumn . .';
+        gap: 10px 20px;
+      "
+    >
+      <div
+        style="background: red; width: 100%; height: 100%; grid-area: doubleRow"
+      ></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div
+        style="
+          background: red;
+          width: 100%;
+          height: 100%;
+          grid-area: doubleColumn;
+        "
+      ></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+    </div>
+
+    <h3>grid-row grid-column</h3>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 20px;
+        gap: 10px 20px;
+      "
+    >
+      <div
+        style="background: red; width: 100%; height: 100%; grid-column: 1 / 3"
+      ></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div
+        style="background: red; width: 100%; height: 100%; grid-row: 2 / 4"
+      ></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+
+      <div style="background: red; width: 100%; height: 100%"></div>
+      <div style="background: red; width: 100%; height: 100%"></div>
+    </div>
+
+    <h1>FLEX</h1>
+    <div style="display: flex; gap: 10px">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+
+    <h3>justify-content</h3>
+    <h4>flex-start</h4>
+    <div style="display: flex; gap: 10px; justify-content: flex-start">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+    <h4>flex-end</h4>
+    <div style="display: flex; gap: 10px; justify-content: flex-end">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+    <h4>center</h4>
+    <div style="display: flex; gap: 10px; justify-content: center">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+    <h4>space-between</h4>
+    <div style="display: flex; gap: 10px; justify-content: space-between">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+
+    <h3>align-items</h3>
+    <h4>flex-start</h4>
+    <div
+      style="
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        height: 200px;
+        border: 1px solid black;
+      "
+    >
+      <div style="width: 200px; height: 50px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 150px; background: red"></div>
+    </div>
+    <h4>flex-end</h4>
+    <div
+      style="
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+        height: 200px;
+        border: 1px solid black;
+      "
+    >
+      <div style="width: 200px; height: 50px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 150px; background: red"></div>
+    </div>
+    <h4>center</h4>
+    <div
+      style="
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 200px;
+        border: 1px solid black;
+      "
+    >
+      <div style="width: 200px; height: 50px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 150px; background: red"></div>
+    </div>
+
+    <h3>flex-direction</h3>
+    <h4>row</h4>
+    <div style="display: flex; gap: 10px; flex-direction: row">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+    <h4>column</h4>
+    <div style="display: flex; gap: 10px; flex-direction: column">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+
+    <h3>flex-wrap</h3>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap">
+      <div style="width: 100px; height: 100px; background: red"></div>
+      <div style="width: 150px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+
+      <div style="width: 200px; height: 100px; background: red"></div>
+    </div>
+  </body>
+</html>
